@@ -1,14 +1,10 @@
 # CTA_Project
-Understanding access to CTA using Chicago Community Area socioeconomic information
-We are trying to if certain areas within the City of Chicago are underserved by public transportation by trying to identify the factors that coontribute to having 
-access to public transportation
-Plan:
-Create a dataframe with each column representing the amount of transportation stops in each community area:
-  Each row represents a community area and each column represents a route (bus/train)
-  The values in each space represent the number of stops for that specific route in that community area
-Run a Cluster Analysis to identify which areas have the greatest access to public transportation
-Map the clusters to see if there any trends in terms of geography of the access
-Use those clusters as target variables for a regression model with socioeconomic factors for each community area as features to identify most important features
-  We area using Data from Chicago Community Survery 20162-2020
-  Also would like to engineer features such as distance to downtown
-  Get size of community area
+Understanding access to CTA using Chicago Community Area socioeconomic and demographic informatio.n
+
+We are trying to identify the factors that most influence access to public transportation within the the City of Chicago. To try to see which variables contribute the most to access to public transportation. In hopes of identifying potential improvements in CTA distribution throughout the city to ensure those most reliant on CTA are having there needs met.
+
+The data we obtained to conduct this analysis was Chicago Transit Authority bus and train stop information and Chicago Community Area locations retrieved through the City of Chicago data portal. Information from the American Community Survery 2016-2020 obtained from the Chicago Metropolitan Agency for Planning. As well as wikipedia data with the sizes of the community areas within the city of Chicago.
+
+To do this we built a linear regression and decision tree model to explain the importance of the features within the model to predict access to public transportation quantified by creating a target variables of stop Density per square mile.
+
+
